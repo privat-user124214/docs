@@ -1,4 +1,4 @@
-/* Sidebar */
+/* Sidebar Schriftart */
 .sidebar {
   position: fixed;
   top: 0;
@@ -7,25 +7,19 @@
   height: 100%;
   background-color: #f4f4f4;
   padding: 20px;
+  font-family: 'Arial', sans-serif; /* Schreibt die Schriftart explizit vor */
 }
 
 .sidebar h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 10px 0;
+  font-family: 'Arial', sans-serif; /* Gleiche Schriftart für Überschrift */
 }
 
 .sidebar ul li a {
   color: #333;
   text-decoration: none;
+  font-family: 'Arial', sans-serif; /* Schreibt auch für Links in der Sidebar die Schrift vor */
 }
 
 .sidebar ul li a:hover {
@@ -33,29 +27,18 @@
   text-decoration: underline;
 }
 
-/* Main Content */
-.main-content {
-  margin-left: 270px;
-  padding: 20px;
+/* Styling der Befehlsliste */
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.main-content h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+.content ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
 }
 
-.main-content a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.main-content a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 0.8em;
-  color: #777;
+.content ul li strong {
+  color: #333;
+  font-weight: bold;
 }
