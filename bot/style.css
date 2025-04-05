@@ -4,7 +4,6 @@
   --accent: #00d4ff;
   --card-bg: #1c1f26;
   --font: 'Segoe UI', Roboto, sans-serif;
-  --sidebar-width: 250px;
 }
 
 * {
@@ -17,57 +16,11 @@ body {
   font-family: var(--font);
   background-color: var(--bg);
   color: var(--text);
+  padding: 2rem;
+  min-height: 100vh;
   display: flex;
-  height: 100vh;
-}
-
-/* Sidebar */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: var(--sidebar-width);
-  background-color: #1a1f25;
-  padding: 2rem;
-  color: var(--text);
-  height: 100%;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-}
-
-.sidebar h2 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: var(--accent);
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar ul li {
-  margin-bottom: 1rem;
-}
-
-.sidebar ul li a {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.sidebar ul li a:hover {
-  color: var(--accent);
-}
-
-/* Main Content */
-.main-content {
-  margin-left: var(--sidebar-width);
-  padding: 2rem;
-  width: calc(100% - var(--sidebar-width));
-  background-color: var(--bg);
-  color: var(--text);
-  overflow-y: auto;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
@@ -80,18 +33,37 @@ header h1 {
   color: var(--accent);
 }
 
-header nav a {
-  font-size: 1rem;
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+
+nav {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
   color: var(--accent);
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: bold;
 }
 
-header nav a:hover {
-  color: #fff;
+nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--accent);
 }
 
-/* Commands Section */
 .content {
   max-width: 900px;
   margin: 0 auto;
@@ -109,35 +81,32 @@ header nav a:hover {
   line-height: 1.5;
 }
 
-.content ul.command-list {
+.content ul {
   list-style-type: none;
-  padding-left: 0;
 }
 
-.content ul.command-list li {
-  margin: 10px 0;
-  font-size: 1.1em;
+.content ul li {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
 }
 
-.content ul.command-list li strong {
+.content ul li strong {
   color: var(--accent);
-  font-weight: bold;
 }
 
-/* Footer */
+.content pre {
+  background-color: #1e1e2e;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: monospace;
+  color: #fff;
+  margin-top: 1rem;
+}
+
 footer {
   margin-top: 3rem;
   text-align: center;
   font-size: 0.85rem;
   color: #666;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: var(--accent);
-  text-decoration: underline;
 }
