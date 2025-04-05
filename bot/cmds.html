@@ -1,54 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bot Commands - Novarix Docs</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="style.css"> <!-- Verweis auf die bot/style.css -->
 </head>
 <body>
+  <header>
+    <h1>Bot Commands</h1>
+    <p>Hier findest du alle wichtigen Befehle für den Novarix Bot.</p>
+  </header>
 
-  <!-- Sidebar Navigation  -->
-  <aside class="sidebar">
-    <h2>Novarix Docs</h2>
+  <nav>
     <ul>
-      <li><a href="../index.html">Startseite</a></li>
+      <li><a href="../../index.html">Zurück zur Übersicht</a></li>
       <li><a href="cmds.html">Commands</a></li>
       <li><a href="setup.html">Setup</a></li>
-      <li><a href="api.html">API</a></li>
     </ul>
-  </aside>
+  </nav>
 
-  <!-- Main Content -->
-  <div class="main-content">
-    <header>
-      <h1>Bot Commands</h1>
-      <nav>
-        <a href="../index.html">Zurück zur Übersicht</a>
-      </nav>
-    </header>
+  <section class="content">
+    <h2>Verfügbare Commands</h2>
+    <ul>
+      <li><strong>/help</strong> - Zeigt eine Liste aller verfügbaren Befehle an.</li>
+      <li><strong>/kick [Benutzer]</strong> - Kickt einen Benutzer vom Server.</li>
+      <li><strong>/ban [Benutzer]</strong> - Bannt einen Benutzer vom Server.</li>
+      <li><strong>/mute [Benutzer]</strong> - Stummschaltet einen Benutzer.</li>
+      <li><strong>/unmute [Benutzer]</strong> - Hebt das Stummschalten eines Benutzers auf.</li>
+    </ul>
+  </section>
 
-    <!-- Commands Section -->
-    <section class="content">
-      <h2>Verfügbare Bot Commands</h2>
-      <p>Hier findest du eine Übersicht aller verfügbaren Commands für den Novarix Bot.</p>
-
-      <ul class="command-list">
-        <li><strong>/help</strong> - Zeigt alle verfügbaren Befehle an.</li>
-        <li><strong>/info</strong> - Zeigt Informationen über den Bot.</li>
-        <li><strong>/kick [user]</strong> - Kickt einen Benutzer vom Server.</li>
-        <li><strong>/ban [user]</strong> - Bannt einen Benutzer vom Server.</li>
-        <li><strong>/mute [user]</strong> - Stummschaltet einen Benutzer.</li>
-        <li><strong>/clear [amount]</strong> - Löscht eine angegebene Anzahl von Nachrichten.</li>
-        <li><strong>/announce [message]</strong> - Sendet eine Ankündigung im Server.</li>
-        <li><strong>/ping</strong> - Zeigt die Reaktionszeit des Bots an.</li>
-      </ul>
-    </section>
-
-    <footer>
-      &copy; 2025 Novarix Studio – Dokumentation für den Novarix Bot
-    </footer>
-  </div>
-
+  <footer>
+    &copy; 2025 Novarix Studio – Dokumentation für den Novarix Bot
+  </footer>
 </body>
 </html>
