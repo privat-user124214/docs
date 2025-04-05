@@ -39,42 +39,50 @@ header p {
   color: #aaa;
 }
 
-.card {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: var(--card-bg);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+nav {
+  margin-bottom: 3rem;
   text-align: center;
 }
 
-.card h2 {
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: var(--accent);
 }
 
-.card p {
+.content p {
   font-size: 1rem;
   color: #ccc;
   line-height: 1.5;
 }
 
-.card a {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--accent);
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
+.content pre {
+  background-color: #1e1e2e;
+  padding: 1rem;
   border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-.card a:hover {
-  background-color: #00b8e6;
+  font-family: monospace;
+  color: #fff;
+  margin-top: 1rem;
 }
 
 footer {
