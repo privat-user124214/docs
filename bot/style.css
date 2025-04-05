@@ -1,4 +1,12 @@
-/* Sidebar Schriftart  */
+/* Allgemeines Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -7,19 +15,26 @@
   height: 100%;
   background-color: #f4f4f4;
   padding: 20px;
-  font-family: 'Arial', sans-serif; /* Schreibt die Schriftart explizit vor */
+  font-family: 'Arial', sans-serif;
 }
 
 .sidebar h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
-  font-family: 'Arial', sans-serif; /* Gleiche Schriftart für Überschrift */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
 }
 
 .sidebar ul li a {
   color: #333;
   text-decoration: none;
-  font-family: 'Arial', sans-serif; /* Schreibt auch für Links in der Sidebar die Schrift vor */
 }
 
 .sidebar ul li a:hover {
@@ -27,18 +42,51 @@
   text-decoration: underline;
 }
 
-/* Styling der Befehlsliste */
-.content ul {
+/* Main Content */
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.main-content h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.content ul.command-list {
   list-style-type: none;
   padding-left: 0;
 }
 
-.content ul li {
+.content ul.command-list li {
   margin: 10px 0;
   font-size: 1.1em;
 }
 
-.content ul li strong {
+.content ul.command-list li strong {
   color: #333;
   font-weight: bold;
+}
+
+/* Links ohne Unterstrich */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
 }
