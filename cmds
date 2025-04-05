@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Commands Dokumentation - Novarix Bot</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <h1>Commands Dokumentation</h1>
+    <p>Alle verfügbaren Befehle für den Novarix Bot</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="../index.html">Zurück zur Übersicht</a></li>
+      <li><a href="setup.html">Bot Einrichtung</a></li>
+      <li><a href="api.html">API Dokumentation</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h2>1. !help - Hilfe anzeigen</h2>
+    <p>Der Befehl <code>!help</code> zeigt eine Liste aller verfügbaren Commands und deren Beschreibung an.</p>
+    <pre><code>!help</code></pre>
+
+    <h2>2. !ping - Ping-Test</h2>
+    <p>Der Befehl <code>!ping</code> sendet eine Antwort zurück, um sicherzustellen, dass der Bot online und erreichbar ist.</p>
+    <pre><code>!ping</code></pre>
+
+    <h2>3. !kick - Nutzer kicken</h2>
+    <p>Der Befehl <code>!kick [@Nutzer]</code> entfernt einen Nutzer aus dem Server.</p>
+    <pre><code>!kick @Nutzer</code></pre>
+  </section>
+
+  <footer>
+    &copy; 2025 Novarix Studio – Dokumentation für den Novarix Bot
+  </footer>
+</body>
+</html>
