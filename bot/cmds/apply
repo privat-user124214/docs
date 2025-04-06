@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novarix Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Dokumentation</h2>
+      <ul>
+        <li><a href="bot"><- Back</a></li>
+        <li><a href="bot/cmds/apply">Apply System</a></li>
+        <li><a href="bot/cmds">Häufige Fragen</a></li>
+        <!-- Füge weitere Links hier hinzu -->
+      </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <header>
+        <h1>Commands Documentation</h1>
+        <p>Hier findest du alle Informationen zu den Commands (= cmds) des Novarix Bots.</p>
+      </header>
+
+      <section>
+        <h3>!info</h3>
+        <p>Erhalte die wichtigsten Informationen zum Bot.</p>
+      </section>
+
+      <footer>
+        &copy; 2025 Novarix Studio – Alle Rechte vorbehalten
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>
