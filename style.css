@@ -16,73 +16,51 @@ body {
   font-family: var(--font);
   background-color: var(--bg);
   color: var(--text);
-  padding: 2rem;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
 }
 
-header {
+.container {
   text-align: center;
-  margin-bottom: 3rem;
+  max-width: 600px;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 3rem;
+h1 {
   color: var(--accent);
-}
-
-header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  color: #aaa;
-}
-
-nav {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-  color: var(--accent);
-}
-
-.content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.content h2 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: var(--accent);
 }
 
-.content p {
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
   font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #009ec5;
 }
 
 footer {
   margin-top: 3rem;
-  text-align: center;
   font-size: 0.85rem;
   color: #666;
 }
