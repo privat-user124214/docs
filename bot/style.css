@@ -1,9 +1,8 @@
 :root {
-  --bg: #f4f4f4;
-  --text: #333;
+  --bg: #0f1117;
+  --text: #eaeaea;
   --accent: #00d4ff;
-  --card-bg: #fff;
-  --sidebar-bg: #1c1f26;
+  --card-bg: #1c1f26;
   --font: 'Segoe UI', Roboto, sans-serif;
 }
 
@@ -17,32 +16,28 @@ body {
   font-family: var(--font);
   background-color: var(--bg);
   color: var(--text);
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
   padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-grow: 1;
 }
 
 .sidebar {
   width: 250px;
-  background-color: var(--sidebar-bg);
+  background-color: var(--card-bg);
   padding: 2rem;
-  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+  color: var(--text);
 }
 
 .sidebar h2 {
-  color: var(--accent);
   font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--accent);
 }
 
 .sidebar ul {
@@ -50,48 +45,53 @@ body {
 }
 
 .sidebar ul li {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .sidebar ul li a {
   color: var(--text);
   text-decoration: none;
-  font-size: 1.1rem;
-  display: block;
-  padding: 0.5rem;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-  background-color: var(--accent);
-  color: #fff;
-  border-radius: 5px;
+  color: var(--accent);
 }
 
 .content {
-  flex-grow: 1;
-  padding: 2rem;
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin-left: 2rem;
 }
 
-.content h1 {
-  color: var(--accent);
+.content header {
+  margin-bottom: 2rem;
+}
+
+.content header h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.content header p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.content section {
+  margin-bottom: 3rem;
 }
 
 .content h2 {
+  font-size: 1.8rem;
   color: var(--accent);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .content p {
   font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1.5rem;
+  color: #ccc;
+  line-height: 1.6;
 }
 
 .content pre {
@@ -105,7 +105,7 @@ body {
 
 footer {
   margin-top: 3rem;
+  text-align: center;
   font-size: 0.85rem;
   color: #666;
-  text-align: center;
 }
