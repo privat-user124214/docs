@@ -1,8 +1,8 @@
 :root {
-  --bg: #0f1117;
-  --text: #eaeaea;
+  --bg: #f4f4f4;
+  --text: #333;
   --accent: #00d4ff;
-  --card-bg: #1c1f26;
+  --card-bg: #fff;
   --font: 'Segoe UI', Roboto, sans-serif;
 }
 
@@ -16,11 +16,8 @@ body {
   font-family: var(--font);
   background-color: var(--bg);
   color: var(--text);
-  padding: 2rem;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 100vh;
 }
 
 header {
@@ -40,8 +37,16 @@ header p {
 }
 
 nav {
-  margin-bottom: 3rem;
-  text-align: center;
+  width: 250px;
+  background-color: #1c1f26;
+  padding: 1rem;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 nav ul {
@@ -49,19 +54,27 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 nav ul li a {
   color: var(--accent);
   text-decoration: none;
   font-weight: bold;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
-  color: var(--accent);
+  background-color: var(--accent);
+  color: #fff;
+}
+
+main {
+  margin-left: 270px;
+  padding: 2rem;
+  width: calc(100% - 270px);
 }
 
 .content {
@@ -77,31 +90,8 @@ nav ul li a:hover {
 
 .content p {
   font-size: 1rem;
-  color: #ccc;
+  color: #333;
   line-height: 1.5;
-}
-
-.content ul {
-  list-style-type: none;
-}
-
-.content ul li {
-  font-size: 1rem;
-  color: #ccc;
-  line-height: 1.6;
-}
-
-.content ul li strong {
-  color: var(--accent);
-}
-
-.content pre {
-  background-color: #1e1e2e;
-  padding: 1rem;
-  border-radius: 8px;
-  font-family: monospace;
-  color: #fff;
-  margin-top: 1rem;
 }
 
 footer {
